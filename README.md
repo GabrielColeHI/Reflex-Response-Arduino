@@ -17,9 +17,9 @@ The slide switch toggles between the menu and gameplay modes:
 - Difficulty is selected by pressing:
   - Left button to decrease difficulty  
   - Right button to increase difficulty  
-- Right-side LEDs (pixels 5–9) display the selected difficulty level.
-- Left-side LEDs (pixels 0–4) display your score as a progress bar representing wins out of total rounds.
-- Hold both buttons to reset your score and total.
+- Right-side LEDs (pixels 5–9) displays the selected difficulty level.
+- Left-side LEDs (pixels 0–4) displays your score as a progress bar representing wins out of total rounds.
+- Hold both buttons in menu to reset your score and total.
 
 ---
 
@@ -49,8 +49,8 @@ Each round begins with a countdown using the bottom 2 LEDs (red → yellow → g
 
 ## Outputs
 
-- NeoPixels (RGB LEDs) — Visual feedback for countdowns, challenges, difficulty, and score  
-- Speaker (`playTone`) — Auditory feedback for success or failure
+- NeoPixels (RGB LEDs) — Visual feedback for countdowns, gameplay, difficulty, and score  
+- Speaker (`playTone`) — Auditory feedback for a win or a loss
 
 ---
 
