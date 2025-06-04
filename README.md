@@ -56,7 +56,7 @@ Each round begins with a countdown using the bottom 2 LEDs (red -> yellow -> gre
 
 ## Gameplay Summary
 
-- The game presents one challenge per round.  
+- Each round is a different challenge.  
 - Players must respond with the correct button(s) within the time limit.  
 - The menu shows current performance and allows difficulty adjustment.  
 - The game can be exited at any time by switching back to menu mode.
@@ -70,8 +70,8 @@ Each round begins with a countdown using the bottom 2 LEDs (red -> yellow -> gre
 | Sensor                     | Purpose                          | Function Used                         | Notes                           |
 |----------------------------|----------------------------------|----------------------------------------|---------------------------------|
 | Slide Switch               | Switch between menu and game     | `CircuitPlayground.slideSwitch()`     | 0 = menu, 1 = gameplay          |
-| Left Button                | Decrease difficulty / input      | `CircuitPlayground.leftButton()`      | Debounced, used in both modes   |
-| Right Button               | Increase difficulty / input      | `CircuitPlayground.rightButton()`     | Debounced, used in both modes   |
+| Left Button                | Decrease difficulty / input      | `CircuitPlayground.leftButton()`      | Debounced   |
+| Right Button               | Increase difficulty / input      | `CircuitPlayground.rightButton()`     | Debounced   |
 
 ### Outputs
 
