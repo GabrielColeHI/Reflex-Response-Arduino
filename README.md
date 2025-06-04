@@ -83,9 +83,9 @@ Each round begins with a countdown using the bottom 2 LEDs (red → yellow → g
 ### Game Logic
 
 - Game starts when slide switch = 1  
-- Countdown (red → yellow → green) displayed on LEDs 4–5  
+- Countdown (red -> yellow -> green) displayed on LEDs 4–5  
 - One of 3 random challenges:
-  - Left-only, Right-only, or Both-buttons
+  - Left, Right, or Both buttons
 - Correct input = green flash + success tone  
 - Incorrect input or timeout = red flash + fail tone  
 - Response time = `baseDelay / difficulty`, with baseDelay = 2500ms  
