@@ -25,7 +25,7 @@ The slide switch toggles between the menu and game modes:
 
 ## Gameplay Mode
 
-Each round begins with a countdown using the bottom 2 LEDs (red → yellow → green), followed by one of three random challenges:
+Each round begins with a countdown using the bottom 2 LEDs (red -> yellow -> green), followed by one of three random challenges:
 
 | LED Display      | Required Input               |
 |------------------|------------------------------|
