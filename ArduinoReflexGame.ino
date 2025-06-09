@@ -54,17 +54,17 @@ void handleMenu() {
 
   CircuitPlayground.clearPixels();
 
-  // Show average (green) on LEDs 0–4, right-to-left
+  // Show average (green) on LEDs 0–4
   int litLEDs = 0;
   if (totalAttempts > 0) {
-    float successRatio = (float)correctAttempts / totalAttempts;
-    litLEDs = round(successRatio * 5.0);
+    float successCalc = (float)correctAttempts / totalAttempts;
+    litLEDs = round(successCalc * 5.0);
   }
   for (int i = 0; i < litLEDs; i++) {
     CircuitPlayground.setPixelColor(4 - i, 0, 255, 0);  // Green, right-to-left
   }
 
-  // Show difficulty (blue) on LEDs 5–9, left-to-right
+  // Show difficulty (blue) on LEDs 5–9
   for (int i = 0; i < difficulty; i++) {
     CircuitPlayground.setPixelColor(5 + i, 0, 0, 255);  // Blue
   }
@@ -89,12 +89,12 @@ void handlePlay() {
   rightPressed = false;
 
   int challenge = random(0, 3);
-  if (challenge == 0) {
+  if (challenge == 0) { 
     for (int i = 0; i <= 4; i++) CircuitPlayground.setPixelColor(i, 0, 0, 255);
   } else if (challenge == 1) {
     for (int i = 5; i <= 9; i++) CircuitPlayground.setPixelColor(i, 0, 0, 255);
   } else {
-    for (int i = 0; i <= 9; i++) CircuitPlayground.setPixelColor(i, 0, 0, 255);
+    for (int i = 0; i <= 9; i++) CircuitPlayground.setPixelColor(i, 0, 0, 255); //both
   }
 
   bool correct = false;
@@ -108,7 +108,7 @@ void handlePlay() {
       return;
     }
 
-    // Both challenge with grace window
+    // Both buttons challenge with grace window
     if (challenge == 2) {
       if (leftPressed && !rightPressed) {
         unsigned long firstPress = millis();
